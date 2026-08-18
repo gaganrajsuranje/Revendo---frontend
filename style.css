@@ -1,0 +1,1534 @@
+
+/* ===================== COMMON ===================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #f4f8ff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(15, 55, 110, 0.12);
+}
+
+.upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 80px;
+    flex-shrink: 0;
+    padding-left: 5%;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-section h1 {
+    font-size: 24px;
+    color: #102a43;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.search-box form {
+    display: flex;
+    width: 100%;
+    border: 1px solid #1769e0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #102a43;
+}
+
+.search-box button {
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background: #1769e0;
+    color: #fff;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.search-box button:hover {
+    background: #0d4fb8;
+    transform: scale(1.03);
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 370px;
+    flex-shrink: 0;
+
+}
+
+.location-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: 1px solid #b9cbe3;
+    background: #fff;
+}
+
+.location-box i {
+    font-size: 14px;
+    color: #1769e0;
+}
+
+.location-box select {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+    cursor: pointer;
+    color: #102a43;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background: #1769e0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+    background: #0d4fb8;
+    transform: scale(1.03);
+}
+
+.main {
+    border-top: 2px solid #1769e0;
+    border-bottom: 2px solid #1769e0;
+    background: #ffffff;
+    padding: 10px 0;
+}
+
+.main ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.main li {
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #102a43;
+}
+
+.main li:hover {
+    color: #1769e0;
+    transform: scale(1.07);
+}
+
+
+/* ===================== HOME PAGE ===================== */
+
+.services-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.services-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #102a43;
+}
+
+/* ===================== SERVICES ===================== */
+
+main .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+main .service-card {
+    background: #ffffff;
+    border: 1px solid #e3ebf5;
+    border-radius: 16px;
+    padding: 28px;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-align: left;
+    box-shadow: 0 5px 18px rgba(23, 105, 224, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+main .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(23, 105, 224, 0.13);
+}
+
+
+/* ICON */
+
+.service-icon {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+}
+
+
+/* BUY */
+
+.buy-icon {
+    background: #e4eeff;
+    color: #1769e0;
+}
+
+
+/* SELL */
+
+.sell-icon {
+    background: #dff8f6;
+    color: #16a6a0;
+}
+
+
+/* REPAIR */
+
+.repair-icon {
+    background: #eee9ff;
+    color: #6546df;
+}
+
+
+/* QUALITY CHECK */
+
+.quality-icon {
+    background: #fff1d4;
+    color: #e4930b;
+}
+
+
+/* CONTENT */
+
+.service-content {
+    flex: 1;
+}
+
+.service-content h3 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    color: #102a43;
+}
+
+.service-content p {
+    margin: 0 0 22px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #5d7190;
+}
+
+
+/* LINKS */
+
+.service-content a {
+    color: #1769e0;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.service-content a:hover {
+    color: #0d4fb8;
+}
+
+.sell-icon + .service-content a {
+    color: #16a6a0;
+}
+
+.repair-icon + .service-content a {
+    color: #6546df;
+}
+
+.quality-icon + .service-content a {
+    color: #e4930b;
+}
+
+
+main .service-card:hover {
+    box-shadow: 0 4px 10px rgba(23, 105, 224, 0.12);
+}
+
+.slider {
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.single-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+
+/* ===================== BUY PAGE ===================== */
+
+body > .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+}
+
+body > .services-grid .service-card {
+    background: #f2f8ff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+
+body > .services-grid .service-card img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 8px;
+    display: block;
+    object-fit: contain;
+}
+
+body > .services-grid .service-card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #102a43;
+}
+
+.services-section h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+    color: #102a43;
+    text-align: center;
+    position: relative;
+}
+
+.services-section h2::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 4px;
+    background: rgba(23, 105, 224, 1.00);
+    border-radius: 4px;
+    margin: 12px auto 0;
+}
+
+/* ===================== CONTACT PAGE ===================== */
+
+.text {
+    width: 30%;
+    height: 20%;
+    margin: 70px 0 100px 90px;
+    max-width: 50%;
+}
+
+.image {
+    margin: 60px;
+    height: 90%;
+    width: 50%;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+.banner {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #eef6ff;
+    margin: 50px 130px;
+    box-shadow: 0 5px 5px rgba(23, 105, 224, 0.10);
+    height: 450px;
+    overflow: hidden;
+    align-items: center;
+}
+
+body > .banner h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xxx-large;
+    color: #102a43;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    height: 300px;
+    align-items: center;
+    padding: 30px;
+}
+
+.help h2 {
+    margin-bottom: 5px;
+    color: #102a43;
+}
+
+.two {
+    margin: 40px 50px;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.two button {
+    height: 100%;
+    width: 45%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #c8d8ea;
+    font-size: large;
+    font-weight: 700;
+    color: #102a43;
+    box-shadow: 0 5px 5px rgba(23, 105, 224, 0.08);
+}
+
+.two button:hover {
+    box-shadow: 0 5px 5px rgba(23, 105, 224, 0.14);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.two button i {
+    margin: 5px;
+}
+
+
+/* ===================== ABOUT US PAGE ===================== */
+
+.about-section {
+    padding: 40px 20px;
+}
+
+.about-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 100vw;
+    margin: auto;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: xxx-large;
+    margin-bottom: 15px;
+    margin-left: 35%;
+    color: #102a43;
+}
+
+.about-text p {
+    font-size: x-large;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #40566f;
+}
+
+
+/* ===================== SELL PAGE ===================== */
+
+body > p {
+    padding: 20px;
+    color: #40566f;
+}
+
+
+/* ===================== SMALL IMPROVEMENTS ===================== */
+
+button,
+input,
+select {
+    font-family: Arial, sans-serif;
+}
+
+/* ===================== TRUST STRIP ===================== */
+
+.trust-strip {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 30px;
+    padding: 28px 7%;
+
+    background: #eef5ff;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 45px;
+
+    align-items: center;
+}
+
+
+/* INDIVIDUAL ITEM */
+
+.trust-item {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* ICON */
+
+.trust-item > i {
+    color: #1769e0;
+
+    font-size: 36px;
+
+    min-width: 42px;
+
+    text-align: center;
+}
+
+
+/* TITLE */
+
+.trust-item h3 {
+    margin: 0 0 5px;
+
+    color: #102a43;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* DESCRIPTION */
+
+.trust-item p {
+    margin: 0;
+
+    color: #5d7190;
+
+    font-size: 16px;
+}
+
+
+/* Buy Page */
+/* ================= BUY PAGE ================= */
+
+.buy-products {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+    background: #ffffff;
+
+    border: 1px solid #e3ebf5;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(23, 105, 224, 0.08);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(23, 105, 224, 0.15);
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-image {
+    width: 100%;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f6f9fd;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.product-info {
+    padding: 22px 24px 25px;
+}
+
+
+.product-info h2 {
+    margin: 0 0 8px;
+
+    color: #102a43;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+.condition {
+    margin: 0 0 12px;
+
+    color: #5d7190;
+
+    font-size: 15px;
+}
+
+
+.price {
+    margin: 0 0 20px;
+
+    color: #1769e0;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+/* VIEW PRODUCT BUTTON */
+
+.view-product {
+    width: 100%;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #1769e0;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+
+.view-product:hover {
+    background: #1258bd;
+}
+
+/* ================= BUY PAGE HERO ================= */
+
+.buy-hero {
+    text-align: center;
+
+    margin: 45px auto 25px;
+
+    width: 90%;
+    max-width: 900px;
+}
+
+.buy-hero h1 {
+    margin: 0 0 10px;
+
+    color: #102a43;
+
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.buy-hero p {
+    margin: 0;
+
+    color: #5d7190;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= BUY CATEGORIES ================= */
+
+.buy-categories {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 30px auto 10px;
+
+    width: 90%;
+
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 11px 20px;
+
+    border: 1px solid #d8e4f2;
+
+    border-radius: 25px;
+
+    background: white;
+
+    color: #40566f;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.category-btn i {
+    margin-right: 7px;
+}
+
+.category-btn:hover {
+    border-color: #1769e0;
+
+    color: #1769e0;
+}
+
+.category-btn.active {
+    background: #1769e0;
+
+    border-color: #1769e0;
+
+    color: white;
+}
+
+/* ===================== SEARCH BAR PAGE CONTROL ===================== */
+
+/* Hide search bar on every page except Buy page */
+body:not(.buy-page) .search-box {
+    display: none;
+}
+
+/* Keep search bar visible on Buy page */
+body.buy-page .search-box {
+    display: flex;
+}
+
+/* =========================================================
+   ABOUT US REDESIGN
+   ========================================================= */
+
+
+/* ================= ABOUT HERO ================= */
+
+.about-hero {
+    text-align: center;
+
+    padding: 50px 20px 25px;
+}
+
+.about-hero h1 {
+    margin: 0 0 10px;
+
+    color: #102a43;
+
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.about-hero p {
+    margin: 0;
+
+    color: #5d7190;
+
+    font-size: 18px;
+}
+
+
+/* ================= WHO WE ARE ================= */
+
+.about-intro {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 30px auto 60px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 55px;
+
+    align-items: center;
+}
+
+
+.about-intro-image img {
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow: 0 6px 20px rgba(23, 105, 224, 0.10);
+}
+
+
+.about-intro-content h2 {
+    margin: 0 0 18px;
+
+    color: #102a43;
+
+    font-size: 30px;
+}
+
+
+.about-intro-content p {
+    margin: 0 0 16px;
+
+    color: #5d7190;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= WHY REVENDO ================= */
+
+.why-revendo {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+.why-revendo > h2 {
+    margin-bottom: 30px;
+
+    color: #102a43;
+
+    font-size: 30px;
+}
+
+
+.about-features {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.about-feature {
+    padding: 30px 25px;
+
+    background: #f6f9fd;
+
+    border: 1px solid #e3ebf5;
+
+    border-radius: 16px;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.about-feature:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(23, 105, 224, 0.10);
+}
+
+
+.about-feature > i {
+    color: #1769e0;
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+
+.about-feature h3 {
+    margin: 0 0 10px;
+
+    color: #102a43;
+
+    font-size: 21px;
+}
+
+
+.about-feature p {
+    margin: 0;
+
+    color: #5d7190;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= OUR PROMISE ================= */
+
+.about-promise {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto 60px;
+    padding: 30px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef5ff;
+    border-radius: 16px;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.about-promise > i {
+    color: #1769e0;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.about-promise h2 {
+    margin: 0 0 7px;
+
+    color: #102a43;
+    font-size: 24px;
+
+    text-align: center;
+}
+
+.about-promise p {
+    margin: 0;
+
+    color: #5d7190;
+    font-size: 16px;
+
+    text-align: center;
+}
+.about-text {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-text h2 {
+    font-size: xxx-large;
+    margin-bottom: 15px;
+    color: #102a43;
+}
+
+.about-text p {
+    font-size: x-large;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #40566f;
+}
+
+/* ===================== CONTACT US PAGE ===================== */
+
+.contact-hero {
+    text-align: center;
+    padding: 50px 20px 25px;
+}
+
+.contact-hero h1 {
+    margin: 0 0 10px;
+    color: #102a43;
+    font-size: 36px;
+}
+
+.contact-hero p {
+    margin: 0;
+    color: #5d7190;
+    font-size: 18px;
+}
+
+
+/* ================= CONTACT OPTIONS ================= */
+
+.contact-options {
+    width: 90%;
+    max-width: 1150px;
+    margin: 25px auto 50px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    text-align: center;
+    padding: 30px 20px;
+
+    background: #f6f9fd;
+    border: 1px solid #e3ebf5;
+    border-radius: 16px;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(23, 105, 224, 0.10);
+}
+
+.contact-card > i {
+    color: #1769e0;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    margin: 0 0 8px;
+    color: #102a43;
+    font-size: 21px;
+}
+
+.contact-card p {
+    margin: 0 0 10px;
+    color: #5d7190;
+    font-size: 15px;
+}
+
+.contact-card a,
+.contact-card span {
+    color: #1769e0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* ================= CONTACT FORM ================= */
+
+.contact-form-section {
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto 55px;
+}
+
+.contact-form {
+    padding: 35px 40px;
+
+    background: #ffffff;
+    border: 1px solid #e3ebf5;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(23, 105, 224, 0.08);
+}
+
+.contact-form h2 {
+    margin: 0 0 8px;
+
+    text-align: center;
+    color: #102a43;
+    font-size: 28px;
+}
+
+.contact-form > p {
+    margin: 0 0 30px;
+
+    text-align: center;
+    color: #5d7190;
+    font-size: 16px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #102a43;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d8e4f2;
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 15px;
+    color: #102a43;
+
+    background: #fafdff;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1769e0;
+    box-shadow: 0 0 0 2px rgba(23, 105, 224, 0.08);
+}
+
+.send-message {
+    width: 100%;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #1769e0;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease,
+                transform 0.1s ease;
+}
+
+.send-message:hover {
+    background: #0d4fb8;
+    transform: translateY(-1px);
+}
+
+.send-message i {
+    margin-right: 7px;
+}
+
+
+/* ================= QUICK HELP ================= */
+
+.contact-help {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto 60px;
+    padding: 30px 40px;
+
+    text-align: center;
+
+    background: #eef5ff;
+    border-radius: 16px;
+}
+
+.contact-help h2 {
+    margin: 0 0 7px;
+
+    color: #102a43;
+    font-size: 24px;
+}
+
+.contact-help p {
+    margin: 0 0 20px;
+
+    color: #5d7190;
+    font-size: 16px;
+}
+
+.quick-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.quick-buttons button {
+    padding: 10px 22px;
+
+    border: 1px solid #d8e4f2;
+    border-radius: 9px;
+
+    background: white;
+    color: #102a43;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.quick-buttons button:hover {
+    color: #1769e0;
+    border-color: #1769e0;
+    transform: translateY(-2px);
+}
+
+.quick-buttons i {
+    color: #1769e0;
+    margin-right: 7px;
+}
+
+/* ===================== SELL PAGE ===================== */
+
+.sell-hero {
+    text-align: center;
+    padding: 50px 20px 25px;
+}
+
+.sell-hero h1 {
+    margin: 0 0 10px;
+
+    color: #102a43;
+
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.sell-hero p {
+    margin: 0;
+
+    color: #5d7190;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* ================= SELL OPTIONS ================= */
+
+.sell-options {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 25px auto 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.sell-card {
+    padding: 30px 25px;
+
+    text-align: center;
+
+    background: #f6f9fd;
+
+    border: 1px solid #e3ebf5;
+
+    border-radius: 16px;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.sell-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(23, 105, 224, 0.10);
+}
+
+.sell-card > i {
+    color: #1769e0;
+
+    font-size: 38px;
+
+    margin-bottom: 18px;
+}
+
+.sell-card h3 {
+    margin: 0 0 10px;
+
+    color: #102a43;
+
+    font-size: 21px;
+}
+
+.sell-card p {
+    margin: 0 0 20px;
+
+    color: #5d7190;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+.sell-card button {
+    padding: 10px 22px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #1769e0;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease,
+                transform 0.1s ease;
+}
+
+.sell-card button:hover {
+    background: #0d4fb8;
+
+    transform: translateY(-1px);
+}
+
+
+/* ================= SELL PROCESS ================= */
+
+.sell-process {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.sell-process > h2 {
+    margin: 0 0 30px;
+
+    color: #102a43;
+
+    font-size: 30px;
+}
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.process-card {
+    position: relative;
+
+    padding: 30px 20px;
+
+    background: white;
+
+    border: 1px solid #e3ebf5;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 18px rgba(23, 105, 224, 0.06);
+}
+
+.process-number {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef5ff;
+
+    color: #1769e0;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.process-card > i {
+    color: #1769e0;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.process-card h3 {
+    margin: 0 0 9px;
+
+    color: #102a43;
+
+    font-size: 18px;
+}
+
+.process-card p {
+    margin: 0;
+
+    color: #5d7190;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ================= SELL PROMISE ================= */
+
+.sell-promise {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto 60px;
+
+    padding: 30px 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    background: #eef5ff;
+
+    border-radius: 16px;
+
+    text-align: center;
+}
+
+.sell-promise > i {
+    color: #1769e0;
+
+    font-size: 38px;
+}
+
+.sell-promise h2 {
+    margin: 0 0 7px;
+
+    color: #102a43;
+
+    font-size: 24px;
+}
+
+.sell-promise p {
+    margin: 0;
+
+    color: #5d7190;
+
+    font-size: 16px;
+}
