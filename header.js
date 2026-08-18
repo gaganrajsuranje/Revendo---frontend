@@ -2,7 +2,7 @@ const headerHTML = `
 <header>
     <div class="upper">
 
-        <a href="homepage.html" class="logo-section">
+        <a href="index.html" class="logo-section">
             <i class="fa-solid fa-rotate fa-2xl"
                style="color: rgba(23, 105, 224, 1.00);"></i>
             <h1>ReVendo</h1>
@@ -44,7 +44,7 @@ const headerHTML = `
 
     <div class="main">
         <ul>
-            <li><a href="homepage.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="buy.html">Buy</a></li>
             <li><a href="sell.html">Sell</a></li>
             <li><a href="aboutus.html">About Us</a></li>
